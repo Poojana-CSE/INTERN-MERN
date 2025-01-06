@@ -1,0 +1,45 @@
+body{
+    text-align: center;
+    /* background-image: url('');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; */
+}
+header{
+    background-color: rgb(27, 26, 26);
+}
+header h2{
+    color: rgb(255, 255, 255);
+    padding: 10px;
+}
+header nav ul{
+    padding: 10px;
+}
+header nav ul li{
+    display: inline;
+    padding: 50px;
+}
+header nav ul li a{
+    color: gold;
+    text-decoration: none;
+}
+#Home h2{
+    color: black;
+}
+#Home img{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+#Bio p{
+    margin-left: 500px;
+    width: 500px;
+}
+#PortFolio{
+    background-color:blanchedalmond;
+    padding: 10px;
+}
+#Skills ul li{
+    display: inline;
+    padding: 25px;
+}
