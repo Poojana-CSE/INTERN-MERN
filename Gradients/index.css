@@ -1,0 +1,6 @@
+body{
+    height: 800px;
+    background-color: aqua;
+    background-image: radial-gradient();
+    background-image: linear-gradient();
+}
