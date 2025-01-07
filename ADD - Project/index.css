@@ -1,0 +1,39 @@
+header{
+    height: 170px;
+    background-image: linear-gradient(rgb(56, 3, 105),rgb(60, 13, 105),rgb(68, 26, 106));
+}
+.head{
+    display: inline-flex;
+    align-items: center;
+
+}
+header div img{
+    margin-top: 10px;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+.navg nav ul{
+    list-style: none;
+    padding-left: 20px;
+    margin: 0;
+    display: flex;
+    gap: 105px;
+}
+.navg nav ul li a{
+    font-family: cursive;
+    font-weight: 550;
+    text-decoration: none;
+    color: gold;
+    transition: color 0.3s;
+}
+/* 
+.navg nav ul li a:hover{
+    color: #7f00ff;
+} */
+
+.navg nav ul li a:hover{
+    color: white;
+}
