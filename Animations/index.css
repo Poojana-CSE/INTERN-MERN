@@ -1,0 +1,51 @@
+div{
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    /* transform: translate(0px,0px);(x,y) */
+    /* transition: height 10s , width 10s;     */
+    /* transition-delay: 5s; */
+    /* transition-duration: 5s; --> theriyala */
+    animation-name: box;
+    animation-duration: 1s;   
+    /* animation-delay: 5s; */
+    animation-iteration-count: infinite;
+    
+}
+@keyframes box{
+    /* from{
+        background-color: red;
+    }
+    to{
+        background-color: green;
+    } */
+    0%{
+        background-color: black;
+    }
+    25%{
+        background-color: aqua;
+    }
+    50%{
+        background-color: red;
+    }
+    75%{
+        background-color: green;
+    }
+    100%{
+        background-color: blue;
+    }
+
+
+}
+
+/* div:hover{
+    /* transform: translate(50px,100px); */
+    /* transform: rotate(45deg);
+    transform: skewY(45deg);  default -> skewX
+    transform: scaleX(1.5); default -> scaleX
+    transform: scaleY(1.5); */
+    /* transform: matrix(1,-0.3,0,1,0,0,0); */
+    /* width: 200px;
+    height: 100px; */
+    /* transition-timing-function: ease-in-out; */
+/* } */ 

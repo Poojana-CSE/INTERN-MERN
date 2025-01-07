@@ -1,89 +1,75 @@
-body {
+body{
     background-color: #3f2a56;
     margin: 0;
     padding: 0;
     color: #fff;
     text-align: center;
 }
-
-h1 {
+h1{
     margin: 20px;
     font-size: 36px;
     color: #ffd700;
 }
-
-table {
+table{
     margin: 20px auto;
     border-collapse: collapse;
     width: 55%; 
     background-color: #5a2d6f;
     border: 2px solid #ffd700;
 }
-
-td {
+td{
     padding: 10px;
     text-align: center;
     border: 2px solid #ffd700;
     background-color: #3f2a56;
 }
-
-td img {
+td img{
     width: 150px;
     height: auto;
     border: 2px solid #ffd700;
     border-radius: 10px;
 }
-
-#Image {
+#Image{
     width: 450px;
     max-width: 600px;
     border: 1px solid #ffd700;
     border-radius: 47px;
 }
-
-h2 {
+h2{
     margin-top: 30px;
     font-size: 28px;
     color: #ffd700;
 }
-
-ul {
+ul{
     text-align: left;
     margin-left: 600px;
     padding: 0px;
 }
-
-ul li {
+ul li{
     font-size: 25px;
     margin: 10px;
 }
-
-table th, table td {
+table th,table td{
     padding: 10px;
     border: 2px solid #ffd700;
 }
-
-table th {
+table th{
     background-color: #5a2d6f;
     color: #ffd700;
 }
-
-table td {
+table td{
     background-color: #3f2a56;
 }
-
 #table2{
     width: 500px;
     margin-left: 520px;
     border: 2px solid #ffd700;
     border-collapse: collapse;
 }
-
-#table2 th {
+#table2 th{
     background-color: #5a2d6f;
     color: #ffd700;
 }
-
-#table2 td {
+#table2 td{
     background-color: #3f2a56;
 }
