@@ -1,9 +1,6 @@
-body{
-    padding-left: 500px;
-}
 #move{
-    width: 650px;
-    height: 700px;
+    width: 100%;
+    height: 100%;
     background-color: black;
     overflow: auto auto;
     white-space: nowrap;
