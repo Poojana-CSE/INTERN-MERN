@@ -1,11 +1,35 @@
+
 header{
     height: 170px;
     background-image: linear-gradient(rgb(56, 3, 105),rgb(60, 13, 105),rgb(68, 26, 106));
 }
+#Home{
+    background-image: url(17.5\ HomeBg.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    opacity: 0.9;
+}
+#About{
+    background-image: url(17.5.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+}
+
+#Varieties{
+    background-image: url(VarBG.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+}
 .head{
     display: inline-flex;
     align-items: center;
-
+    padding: 0;
 }
 header div img{
     margin-top: 10px;
@@ -26,14 +50,100 @@ header div img{
     font-family: cursive;
     font-weight: 550;
     text-decoration: none;
-    color: gold;
-    transition: color 0.3s;
-}
-/* 
-.navg nav ul li a:hover{
-    color: #7f00ff;
-} */
-
-.navg nav ul li a:hover{
     color: white;
+    display: inline-block; 
+    transition: color 0.3s, transform 0.3s;
+}
+.navg nav ul li a:hover{
+    color: gold;
+    transform: scale(1.5);
+    font-weight: bold;
+}
+.audioimg img{
+    width: 100%;
+}
+.audioimg audio{
+    display: none;
+}
+
+#About h2{
+    text-align: center;
+    font-weight: 1000;
+    margin-bottom: 20px;
+    color: rgb(56, 3, 105);
+    font-family: cursive;
+    font-size: xx-large;
+}
+.aboutdm{
+    display: flex;
+    margin-bottom: 110px;
+}
+.aboutdm img{
+    width: 100%;
+    margin-left: 100px;
+    height: 500px;
+    max-width: 400px;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+.para{
+    color: black;
+    line-height: 1.6;
+}
+.para pre{
+    font-size: medium;
+    padding-top: 10px;
+    font-family: cursive;
+    font-weight: 550;
+    line-height: 3.6;
+    color: rgb(56, 3, 105);
+}
+.image img{
+    width: 100%;
+}
+#move{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgb(219,173,66),rgb(209, 169, 74),rgb(211, 174, 53),rgb(218, 185, 78));
+    overflow: auto auto;
+    white-space: nowrap;
+    padding: 1px;
+}
+#move .slide{
+    display: inline-block;
+}
+#move .slide img{
+    height: 250px;
+    width: 250px;
+    margin: 50px;
+    padding-top: 15px;
+    padding-left: 15px;
+    border-radius: 40px;
+    transition: transform 0.3s;
+}
+#move .slide img:hover{
+    transform: scale(1.3);
+}
+
+#move .slide h4{
+    margin-top: 2px;
+    padding-left: 160px;
+    color: rgb(56, 3, 105);
+    font-family: cursive;
+    font-size: medium;
+    font-weight: 900;
+    transition: transform 0.3s;
+}
+
+#move .slide h4:hover{
+    transform: scale(1.3);
+}
+
+#Varieties h2{
+    text-align: center;
+    font-weight: 3000;
+    margin-bottom: 20px;
+    color: rgb(56, 3, 105);
+    font-family: cursive;
+    font-size: xx-large;
 }
