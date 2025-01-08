@@ -355,17 +355,28 @@ header div img{
     font-family: cursive;
     color: rgb(56, 3, 105);
 }
+#Footerse div img{
+    background-image: linear-gradient(rgb(189,135,26),rgb(249,224,84),rgb(191,136,27));
+    padding-bottom: 1px;
+    font-family: cursive;
+    padding-top: 2px;
+    padding-right: 3px;
+    padding-bottom: 2px;
+    padding-left: 1px;
+    color: rgb(56, 3, 105);
+}
 #Footerse .icon{
-    padding-left: 250px;
-    margin-left: 50px;
+    padding-left: 3px;
+    margin-left: 290px;
     display: inline;
     height: 25px;
     margin-bottom: 100px;
 }
-h5{
+#heading{
     font-size: large;
     font-style: italic;
     font-family: cursive;
     text-align: center;
     margin-top: 50px;
+    text-shadow: 0 0 3px gold;
 }
