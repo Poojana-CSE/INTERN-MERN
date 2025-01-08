@@ -1,55 +1,52 @@
-body {
+table tr td{
+    padding: 7px;
+    
+}
+table{
+    padding-left: 100px;
+}
+table tr{
+    height: 50px;
+    padding-left: 50px;
+}  
+body h1{
     text-align: center;
-    background-color:;
-    margin: 0;
+    color: blueviolet;
+    font-style: italic;
+    font-family: cursive;
+}  
+.container{
+    display: flex;
+    justify-content: center;
+    border-color: black;
+ }
+.container2{
+    display: flex;
+    justify-content: center;
+}
+body{
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    margin: 0px;
     padding: 0;
+    height: 100vh;
+    background-image: linear-gradient(rgb(189,135,26),rgb(249,224,84),rgb(191,136,27));
 }
-form{
-    background:lightgrey;
-    padding: 20px;
-    width: 350px;
-    margin: 50px auto;
-    box-sizing: border-box;
+input{
+    padding: 10px 10px;
 }
-fieldset{
+button{
+    padding: 10px 20px;
+    background-color: rgb(56, 3, 105);
+    color: gold;
     border: none;
-    padding: 0;
-    margin: 0;
-}
-legend{
-    margin-bottom: 15px;
-    color: black;
-}
-label {
-    margin-bottom: 5px;
-    color: black;
-}
-input, textarea, button {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid grey;
     border-radius: 5px;
-    box-sizing: border-box;
-    background-color: white;
-    color: black;
+    cursor: pointer;
 }
-input[type="radio"], input[type="checkbox"] {
-    width: auto;
-    margin-right: 5px;
-}
-textarea{
-    height: 80px;
-}
-button {
+button:hover{
     background-color: black;
-    color: white;
-    border: none;
 }
-button[type="reset"] {
-    background-color: black;
-    color: white;
-}
-input::placeholder, textarea::placeholder {
-    color: grey;
+label{
+    font-family: cursive;
+    font-weight: 900;
 }

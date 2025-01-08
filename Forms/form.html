@@ -1,77 +1,119 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="form.css">
-</head>
-<body>
-    <form action="https://formspree.io/f/xlddozlj" method="POST">
-        <fieldset>
-        <legend>Registration Form</legend>
-        <label>Name</label>
-        <input name="Name" type="text" placeholder="Enter Your Name" required>
-        <br>
-        <br>
-        <label>Email</label>
-        <input name="Email" type="email" placeholder="Enter Your Email" required>
-        <br>
-        <br>
-        <label>Password</label>
-        <input name="Password" type="password" placeholder="Enter Your Password" required>
-        <br>
-        <br>
-        <label>Age</label>
-        <input name="Age" type="number" placeholder="Enter Your Age">
-        <br>
-        <br>
-        <label>Contact Number</label>
-        <input name="Number" type="tel" placeholder="Enter Your Contact Number"required>
-        <br>
-        <br>
-        <label>Date Of Birth</label>
-        <input name="Date Of Birth" type="date" placeholder="Enter Your DOB">
-        <br>
-        <br>
-        <label>Year Of Passing</label>
-        <input name="Year Of Passing" type="year" placeholder="Enter Your Graduation Year">
-        <br>
-        <br>
-        <label>Gender</label><br>
-        <input type="radio" name="gender" value="Male"> Male
-        <br>
-        <input type="radio" name="gender" value="Female"> Female
-        <br>
-        <input type="radio" name="gender" value="Others"> Others
-        <br>
-        <br>
-        <br>
-        <label>Programming Languages Known</label><br>
-        <input name="Languages" type="checkbox" value="Python">Python<br>
-        <input name="Languages" type="checkbox" value="JAVA">JAVA<br>
-        <input name="Languages" type="checkbox" value="C">C<br>
-        <input name="Languages" type="checkbox" value="C++">C++<br>
-        <br>
-        <br>
-        <label>Select Your Fav Color</label>
-        <input name="Color" type="color">
-        <br>
-        <br>
-        <label>Provide Your GitHub Link</label>
-        <input name="Link" type="url">
-        <br>
-        <br>
-        <label>Upload Your Resume</label>
-        <input name="Resume" type="file" placeholder="Resume Upload">
-        <br>
-        <br>
-        <textarea>About</textarea>
-        <br>
-        <br>
-        <button type="reset">Reset</button>
-        <button type="submit">Submit</button>
-    </fieldset>
-    </form>
-</body>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <h1>Register Here</h1>
+    <div class="container">
+      <form action="https://formspree.io/f/mdkkpbdo" method="POST">
+          <table>
+            <tr>
+              <td>
+                <label>Name</label>
+              </td>
+              <td>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Enter your Name"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label>Email</label>
+              </td>
+              <td>
+                <input type="email" name="email" placeholder="Enter your Email" required>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label>Age</label>
+              </td>
+              <td>
+                <input type="number" name="age" placeholder="Enter your Age">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label>Contact</label>
+              </td>
+              <td>
+                <input type="tel" name="contact" placeholder="Enter your Contact">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label>Date Of Birth</label>
+              </td>
+              <td>
+                <input type="date" name="date">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label>Year Of Passing</label>
+              </td>
+              <td>
+                <input type="year" name="PassoutYear" placeholder="Enter your Passed out year">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label>Upload your Resume</label>
+              </td>
+              <td>
+                <input type="file" placeholder="Upload your Image">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label>Gender</label>
+              </td>
+              <td>
+                <input type="radio" value="male" name="gender" >Male
+                <input type="radio" value="female" name="gender" >Female
+                <input type="radio" value="gender" name="gender" >others
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label>Programming lang Known</label>
+              </td>
+              <td>
+                <input type="checkbox" value="Python" name="lang" >Python
+                <input type="checkbox" value="C" name="lang" >C
+                <input type="checkbox" value="Java" name="lang" >Java
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label>Select Your color</label>
+              </td>
+              <td>
+                <input type="color" name="color" required >
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label>Provide your linkedin profile link</label>
+              </td>
+              <td>
+                <input type="url" name="linkedin" placeholder="Enter your linkedin Link">
+              </td>
+            </tr>
+          </table>
+          <div class="container2">
+            <button type="Submit">Submit</button>
+          </div>
+      </form>
+    </div>
+  </body>
 </html>
