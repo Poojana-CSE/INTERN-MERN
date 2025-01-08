@@ -22,7 +22,7 @@
                         <li><a href="#Ingredients">Ingredients</a></li>
                         <li><a href="#Advertisements">Advertisements</a></li>
                         <li><a href="#Reviews">Reviews</a></li>
-                        <li><a href="#Contact">Contact</a></li>
+                        <li><a href="#Footer">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -33,7 +33,7 @@
         <section id="Home">
             <div class="audioimg">
                 <img src="FullScreen.jpeg" alt="Dairy Milk Image">
-                <audio id="audio" >
+                <audio id="audio" autoplay>
                     <source src="Audio.mp3" type="audio/mp3">
                 </audio>
             </div>
@@ -90,11 +90,83 @@
                     <h4>Lickables</h4>
                 </div>
             </div>
-        </section>        
+        </section>
+
+        <section id="Ingredients">
+            <h2>Ingredients</h2>
+            <div class="ingd">
+                <table>
+                    <tr>
+                        <td><img src="Milk.jpeg" alt="Milk Image"></td>
+                        <td><img src="Powder.jpeg" alt="Powder Image"></td>
+                        <td><img src="Butter.jpeg" alt="Butter Image"></td>
+                        <td><img src="Sugar.jpeg" alt="Sugar Image"></td>
+                        <td><img src="Vanilla Extract.jpeg" alt="Vanilla Extract Image"></td>
+                    </tr>
+                </table>
+            </div>
+
+        </section>
+
+        <section id="Advertisements">
+            <h2>Videos</h2>
+            <div id="move1">
+                <div class="slide1">
+                    <video controls>
+                        <source src="v4.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="slide1">
+                    <video controls>
+                        <source src="v3.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="slide1">
+                    <video controls>
+                        <source src="v2.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="slide1">
+                    <video controls>
+                        <source src="v1.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>  
+        <section id="Reviews">
+            <div class="review">
+                <div class="form">
+                    <h1>Dairy Milk Reviews</h1>
+                    <form class="rating" action="#Footer">
+                        <input type="text" placeholder="Your Name" required>
+                        <select required>
+                            <option value="">Rating</option>
+                            <option value="5">⭐⭐⭐⭐⭐</option>
+                            <option value="4">⭐⭐⭐⭐</option>
+                            <option value="3">⭐⭐⭐</option>
+                            <option value="2">⭐⭐</option>
+                            <option value="1">⭐</option>
+                        </select>
+                        <textarea placeholder="Your Review" rows="4" required></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                <div>
+                    <a href="https://www.cadbury.co.uk/"><img src="BG Image1.jpeg" alt="Image" class="reviewimage"></a>
+                    
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer>
-
+    <footer id="Footer">
+        <section id="Footerse">
+            <h3><p>&copy;2025 Cadbury. All rights reserved.</p></h3>
+            <img class="icon" src="instagram.png" alt="insta logo">
+            <img class="icon" src="facebook.png" alt="insta logo">
+            <img class="icon" src="twitter.png" alt="insta logo">
+            <img class="icon" src="youtube.png" alt="insta logo">
+        </section>
     </footer>
 </body>
 </html>
