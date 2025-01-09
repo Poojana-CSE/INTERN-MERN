@@ -1,0 +1,49 @@
+body{
+    height: 100%;
+    height: 100%;
+    background-image: radial-gradient(rgb(255, 255, 255),rgb(224, 224, 224),rgb(192, 192, 192),rgb(160, 160, 160),rgb(128, 128, 128),rgb(96, 96, 96));
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-size: cover;
+}
+h2{
+    text-align: center;
+    margin-top: 30px;
+    font-family: cursive;
+    font-size: 50px;
+    font-weight: 1000;
+    font-style: italic;
+    color: black;
+    padding-left: 17px;
+}
+h2:hover{
+    color: black;
+}
+input{
+    margin-top: 5px;
+    margin-left: 600px;
+    width: 350px;
+    height: 35px;
+}
+table{
+    margin-top: 30px;
+    margin-left: 605px;
+}
+table tr td{
+    padding: 15px;
+}
+table tr td button{
+    height: 55px;
+    width: 55px;
+}
+table tr td button:hover{
+    color: darkgray;
+    box-shadow: 0px 0px 2px 2px;
+}
+p{
+    text-align: center; 
+    font-size: 25px; 
+    font-family: cursive; 
+    margin-top: 20px;
+}
