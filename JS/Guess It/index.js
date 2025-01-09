@@ -1,11 +1,17 @@
 var randomNumber=Math.floor(Math.random()*100)+1;
-var attempts=5;
+console.log(randomNumber);
+var attempts=50;
+var boxnum = 1;
 document.getElementById('btn').addEventListener('click',function(){
     var guess=  parseInt(document.getElementById('guessinput').value);
-    for(i=0;i<5;i++){
+    for(i=0;i<attempts;i++){
     if(guess===randomNumber){
-        display("Congratulations You Guessed The Number In "+ attempts +" ATTEMPTS!");
-        document.getElementById('guessinput').value = "";
+        lock.src = 'open.jpg';
+        display("Box Opened!"+ attempts +" ATTEMPTS!");
+        display("Level " + boxnum + " completed");
+        document.getElementById('guessinput').value = ""; 
+        lock.src = 'close.jpg';
+        boxnum++;
     }
     else if(guess<randomNumber){
         display("Number Is Too Low, Try Higher Number");
