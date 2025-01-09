@@ -5,11 +5,39 @@ body{
   align-items: center;
   height: 725px;
   margin: 0;
+  gap: 180px;
+  background-image: radial-gradient(rgb(211, 211, 211),rgb(176, 176, 176),rgb(128, 128, 128),rgb(80, 80, 80),rgb(48, 48, 48));
 }
 #robot{
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation-name: moverobo;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes moverobo{
+  0%, 100%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-20px);
+  }
+}
+.robo1{
+  padding-top: 75px;
+  animation-delay: 1s;
+}
+.robo2{
+  padding-bottom: 75px;
+  animation-delay: 3s;
+}
+.robo3{
+  padding-top: 175px;
+  animation-delay: 5s;
+}
+.robo4{
+  animation-delay: 7s;
 }
 #head{
   position: relative;
@@ -19,7 +47,37 @@ body{
   border-radius: 20px;
   border: 3px solid black;
   animation-name: facecolor;
-  animation-duration: 2s;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+@keyframes facecolor {
+  0%{
+    background-color: rgb(204, 204, 204);
+  }
+  12.5%{
+    background-color: rgb(200, 180, 255);
+  }
+  25%{
+    background-color: rgb(180, 255, 200);
+  }
+  37.5%{
+    background-color: rgb(255, 200, 180);
+  }
+  50%{
+    background-color: rgb(180, 200, 255);
+  }
+  62.5%{
+    background-color: rgb(255, 180, 200);
+  }
+  75%{
+    background-color: rgb(200, 255, 180);
+  }
+  87.5%{
+    background-color: rgb(255, 255, 200);
+  }
+  100%{
+    background-color: rgb(204, 204, 204);
+  }
 }
 #eyes{
   display: flex;
@@ -31,20 +89,51 @@ body{
   height: 30px;
   width: 30px;
   border-radius: 50%;
+  animation-name: blink;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes blink{
+  0%,20%,50%,80%,100%{
+    height: 30px;
+  }
+  75%{
+    height: 5px;
+  }
 }
 .iris{
   background-color: rgb(204, 204, 204);
   height: 13px;
   width: 11px;
   border-radius: 50%;
+  animation-name: rolling;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes rolling{
+  0%{
+    transform: translate(0, 0);
+  }
+  25%{
+    transform: translate(5px, -5px);
+  }
+  50%{
+    transform: translate(10px, 0);
+  }
+  75%{
+    transform: translate(5px, 5px);
+  }
+  100%{
+    transform: translate(0, 0);
+  }
 }
 #iris1{
-  margin-left: 9px;
-  margin-top: 13px;
+  margin-left: 5px;
+  margin-top: 9px;
 }
 #iris2{
-  margin-left: 9px;
-  margin-top: 13px;
+  margin-left: 5px;
+  margin-top: 9px;
 }
 #mouth{
   position: absolute;
@@ -55,6 +144,13 @@ body{
   width: 60px;
   border-radius: 5px;
 }
+#mouth:hover{
+  background-color: transparent;
+  border: 2px solid black;
+  height: 20px;
+  width: 60px;
+  border-radius: 0 0 20px 20px;
+}
 #body{
   position: relative;
   background-color: rgb(136, 136, 136);
@@ -63,6 +159,26 @@ body{
   border-radius: 10px;
   margin-top: 10px;
   border: 3px solid black;
+  animation-name: bodycolor;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes bodycolor{
+  0%{
+    background-color: rgb(204, 204, 204);
+  }
+  25%{
+    background-color: rgb(200, 180, 255);
+  }
+  50%{
+    background-color: rgb(180, 255, 200);
+  }
+  75%{
+    background-color: rgb(255, 200, 180);
+  }
+  100%{
+    background-color: rgb(204, 204, 204);
+  }
 }
 #hands{
   position: absolute;
@@ -72,9 +188,10 @@ body{
   width: 180px;
 }
 #hand1{
-  transform: rotate(45deg);
+  transform: rotate(225deg);
+  top: -4px;
   position: relative;
-  left: -58px;
+  left: -60px;
 }
 #hand2{
   transform: rotate(135deg);
@@ -86,6 +203,37 @@ body{
   width: 20px;
   border-radius: 10px;
   border: 2px solid black;
+}
+#hand1:hover{
+  animation-name: hi;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+#hand1:hover::after{
+  content: "Hi";
+  position: absolute;
+  top: -30px;
+  left: -10px;
+  font-size: 25px;
+  color: black;
+  font-weight: bold;
+}
+@keyframes hi{
+  0%{
+    transform: rotate(310deg);
+  }
+  25%{
+    transform: rotate(345deg);
+  }
+  50%{
+    transform: rotate(310deg);
+  }
+  75%{
+    transform: rotate(345deg);
+  }
+  100%{
+    transform: rotate(310deg);
+  }
 }
 #legs{
   display: flex;
@@ -100,4 +248,21 @@ body{
   width: 20px;
   border-radius: 10px;
   border: 2px solid #000;
+  animation-name: moveleg;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes moveleg{
+  0%, 100%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-20px);
+  }
+}
+.leg:nth-child(odd){
+  animation-delay: 0s;
+}
+.leg:nth-child(even){
+  animation-delay: 0.75s;
 }
