@@ -1,35 +1,34 @@
-var randomNumber = Math.floor(Math.random() * 100) + 1;
-var boxcount = 1;
-var maxAttempts = 10;
-var attempts = maxAttempts;
+var randomNumber=Math.floor(Math.random()*100)+1;
 console.log(randomNumber);
-document.getElementById('btn').addEventListener('click', function () {
-    var guess = parseInt(document.getElementById('guessinput').value);
-    attempts--;
-    if (guess === randomNumber){
+var attempts=50;
+var boxnum = 1;
+document.getElementById('btn').addEventListener('click',function(){
+    var guess=  parseInt(document.getElementById('guessinput').value);
+    for(i=0;i<attempts;i++){
+    if(guess===randomNumber){
         lock.src = 'open.jpg';
-        levelUp();
-    } else if (attempts > 0) {
-        display(guess < randomNumber ? "Too low! Try higher." : "Too high! Try lower.");
-    } else {
-        gameOver();
+        display("Box Opened!"+ attempts +" ATTEMPTS!");
+        display("Level " + boxnum + " completed");
+        document.getElementById('guessinput').value = ""; 
+        lock.src = 'close.jpg';
+        boxnum++;
     }
-    updateInfo();
+    else if(guess<randomNumber){
+        display("Number Is Too Low, Try Higher Number");
+        document.getElementById('guessinput').value = "";
+
+    }
+    else{
+        display("Number Is Too High, Try Lower Number");
+        document.getElementById('guessinput').value = "";
+    }
+}
+    attempts--;
+    if(attempts==0){
+        display("Game Over! Try Again...And The Random Number Is " + randomNumber);
+        document.getElementById('guessinput').value = "";
+    }
 });
-function levelUp() {
-    boxcount++;
-    randomNumber = Math.floor(Math.random() * 100) + 1;
-    console.log(randomNumber);
-    attempts = maxAttempts - boxcount;
-    display("Correct! Welcome to Level " + boxcount + ".");
-    lock.src = 'close.jpg'
-    document.getElementById('guessinput').value = "";
-}
-function gameOver() {
-    display("Game Over! The number was " + randomNumber + ".");
-    document.getElementById('btn').disabled = true;
-}
-function updateInfo() {
-    document.getElementById('level').textContent = "Level: " + boxcount;
-    document.getElementById('attempts').textContent = "Attempts Remaining: " + attempts;
+function display(msg){
+    document.getElementById('msg').textContent=msg;
 }
