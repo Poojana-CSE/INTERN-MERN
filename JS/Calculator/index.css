@@ -6,29 +6,83 @@ body{
     padding: 0;
     width: 100%;
     background-size: cover;
+    background: radial-gradient(circle, gold, black);
+
+}
+.inputbox{
+    background-image: radial-gradient(circle,white,grey);
+    height: 80px;
+    width: 400px;
+    margin-left: 590px;
+    border-style: groove;
+    border-radius: 15px;
+}
+.inputbox:hover{
+    box-shadow: 0px 0px 1px 1px;
+}
+.btn{
+    background-image: radial-gradient(circle,white,grey);
+    height: 400px;
+    width: 400px;
+    margin-left: 595px;
+    margin-top: -10px;
+    border-radius: 20px;
+}
+.btn:hover{
+    box-shadow: 0px 0px 3px 3px;
 }
 h2{
     text-align: center;
-    margin-top: 30px;
+    margin-top: 25px;
     font-family: cursive;
     font-size: 50px;
     font-weight: 1000;
     font-style: italic;
     color: black;
-    padding-left: 17px;
+    padding-left: 67px;
+    animation-name: colorchange,wave;
+    animation-duration: 2s,2s;
+    animation-iteration-count: infinite,2;
+}
+@keyframes colorchange{
+    0%{
+        color: rgb(86, 82, 82);
+    }
+    100%{
+        color: black;
+    }
+}
+@keyframes wave{
+    0%, 100% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    75% {
+        transform: translateY(-5px);
+    }
 }
 h2:hover{
     color: black;
 }
 input{
-    margin-top: 5px;
-    margin-left: 600px;
+    margin-top: 17px;
+    margin-left: 25px;
     width: 350px;
-    height: 35px;
+    height: 40px;
+}
+input:hover{
+    background-color: rgb(240, 240, 240);
+    border-color: rgb(102, 102, 102);
+    box-shadow: 0px 0px 3px 3px;
 }
 table{
-    margin-top: 30px;
-    margin-left: 605px;
+    margin-left: 22px;
+    margin-top: 25px;
 }
 table tr td{
     padding: 15px;
@@ -36,9 +90,10 @@ table tr td{
 table tr td button{
     height: 55px;
     width: 55px;
+    margin-top: 10px;
 }
 table tr td button:hover{
-    color: darkgray;
+    color: black;
     box-shadow: 0px 0px 2px 2px;
 }
 p{
@@ -46,4 +101,5 @@ p{
     font-size: 25px; 
     font-family: cursive; 
     margin-top: 20px;
+    margin-left: 70px;
 }

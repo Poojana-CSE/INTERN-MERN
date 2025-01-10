@@ -1,23 +1,23 @@
 var opt = "";
 var fnum = "";
 var snum = "";
-
 function append(number){
     if (opt === ""){
+        document.getElementById('output').innerHTML = "Enter Number 1";
         fnum += number;
         document.getElementById('result').value = fnum;
     } 
     else{
         snum += number;
         document.getElementById('result').value =fnum+" "+opt+" "+snum;
+        document.getElementById('output').innerHTML = "Number 2 Entered, See The Result";
     }
 }
-
 function setopt(op){
     opt = op;
+    document.getElementById('output').innerHTML = "Operator Choosed";
     document.getElementById('result').value = fnum+" "+opt;
 }
-
 function showres(){
     let result = 0;
     switch (opt){
@@ -37,9 +37,8 @@ function showres(){
             result = "Error";  
     }
     document.getElementById('result').value = result; 
-    document.getElementById('output').innerText = "Result Is:  " + result;
+    document.getElementById('output').innerHTML = "Result Is:  " + result;
 }
-
 function reset(){
     fnum = "";
     snum = "";
