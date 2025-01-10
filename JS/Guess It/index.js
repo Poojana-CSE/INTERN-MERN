@@ -1,6 +1,6 @@
 var randomNumber=Math.floor(Math.random()*100)+1;
-var attempts=10;
 console.log(randomNumber);
+var attempts=10;
 var boxcount=0;
 
 document.getElementById('btn').addEventListener('click',function(){
@@ -13,6 +13,7 @@ document.getElementById('btn').addEventListener('click',function(){
         lock.height = 209;
         display("Congratulations!!!.You opened the box "+boxcount);
         randomNumber=Math.floor(Math.random()*100)+1;
+        console.log(randomNumber);
         attempts=10;
         setTimeout(()=>{
           lock.src='lock.jpg';
