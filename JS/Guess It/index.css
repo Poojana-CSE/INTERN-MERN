@@ -10,9 +10,9 @@ h2{
     color: black;
     margin-top: 50px;
     font-size: 50px;
-    animation-name: colorchange,wave;
-    animation-duration: 2s,2s;
-    animation-iteration-count: infinite,2;
+    animation-name: colorchange,wave,zoomIn;
+    animation-duration: 2s,2s,2s;
+    animation-iteration-count: infinite,2,1;
 }
 @keyframes colorchange{
     0%{
@@ -36,18 +36,29 @@ h2{
         transform: translateY(-5px);
     }
 }
+@keyframes zoomIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
 p{
     margin-top: 50px;
     font-size: 25px;
+    animation: zoomIn 1s 1;
 }
-.container {
+.container{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 20px;
 }
-input[type="number"]{
+input{
     padding: 10px;
     font-size: 16px;
     margin: 10px;
@@ -57,6 +68,7 @@ input[type="number"]{
     border-radius: 5px;
     background-color: rgb(224, 224, 224);
     color: rgb(0, 0, 0);
+    animation: zoomIn 1s 1;
 }
 input:hover{
     box-shadow: 0px 0px 2px 2px black;
@@ -68,8 +80,10 @@ button{
     color: white;
     border: none;
     border-radius: 5px;
-    margin-top: 35px;
+    margin-top: 17px;
     cursor: pointer;
+    animation: zoomIn 1s 1;
+    animation: pulse 2s infinite;
 }
 button:hover{
     background-color: rgb(68, 68, 68);
@@ -77,11 +91,15 @@ button:hover{
 }
 #lock{
     margin: 20px;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     background-color: rgb(187, 187, 187);
     border-radius: 50%;
-    margin-top: 50px;
+    margin-top: 40px;
+    animation: zoomIn 1s 1;
+}
+#lock:hover{
+    box-shadow: 0px 0px 2px 2px black;
 }
 #msg{
     font-size: 18px;
@@ -91,4 +109,18 @@ button:hover{
 .container p{
     font-size: 16px;
     color: rgb(68, 68, 68);
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
 }
