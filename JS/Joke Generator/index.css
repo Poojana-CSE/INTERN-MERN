@@ -1,0 +1,45 @@
+.heading h2{
+    text-align: center;
+    font-family: cursive;
+    font-size: 50px;
+    font-weight: 1000;
+    font-style: italic;
+    color: black;
+    padding-left: 67px;
+    animation-name: colorchange,wave;
+    animation-duration: 2s,2s;
+    animation-iteration-count: infinite,2;
+}
+@keyframes colorchange{
+    0%{
+        color: rgb(86, 82, 82);
+    }
+    100%{
+        color: black;
+    }
+}
+@keyframes wave{
+    0%, 100% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    75% {
+        transform: translateY(-5px);
+    }
+}
+.btn{
+    margin-left: 145px;
+    margin-top: 50px;
+    height: 35px;
+    width: 175px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 7px 7px darkgrey;
+}
+button h3{
+    margin-top: 6px;
+}

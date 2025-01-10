@@ -1,5 +1,94 @@
+body{
+    font-family: cursive;
+    text-align: center;
+    background: radial-gradient(circle, rgb(255, 255, 255), rgb(204, 204, 204), rgb(51, 51, 51));
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+h2{
+    color: black;
+    margin-top: 50px;
+    font-size: 50px;
+    animation-name: colorchange,wave;
+    animation-duration: 2s,2s;
+    animation-iteration-count: infinite,2;
+}
+@keyframes colorchange{
+    0%{
+        color: rgb(86, 82, 82);
+    }
+    100%{
+        color: black;
+    }
+}
+@keyframes wave{
+    0%, 100% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    75% {
+        transform: translateY(-5px);
+    }
+}
+p{
+    margin-top: 50px;
+    font-size: 25px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+input[type="number"]{
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px;
+    margin-top: 45px;
+    width: 200px;
+    border: 2px solid rgb(102, 102, 102);
+    border-radius: 5px;
+    background-color: rgb(224, 224, 224);
+    color: rgb(0, 0, 0);
+}
+input:hover{
+    box-shadow: 0px 0px 2px 2px black;
+}
+button{
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: rgb(102, 102, 102);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 35px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(68, 68, 68);
+    box-shadow: 0px 0px 2px 2px black;
+}
 #lock{
-    width: 125px;
-    height: 125px;
-    padding-right:50px
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(187, 187, 187);
+    border-radius: 50%;
+    margin-top: 50px;
+}
+#msg{
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+}
+.container p{
+    font-size: 16px;
+    color: rgb(68, 68, 68);
 }

@@ -1,34 +1,46 @@
 var randomNumber=Math.floor(Math.random()*100)+1;
+var attempts=10;
 console.log(randomNumber);
-var attempts=50;
-var boxnum = 1;
-document.getElementById('btn').addEventListener('click',function(){
-    var guess=  parseInt(document.getElementById('guessinput').value);
-    for(i=0;i<attempts;i++){
-    if(guess===randomNumber){
-        lock.src = 'open.jpg';
-        display("Box Opened!"+ attempts +" ATTEMPTS!");
-        display("Level " + boxnum + " completed");
-        document.getElementById('guessinput').value = ""; 
-        lock.src = 'close.jpg';
-        boxnum++;
-    }
-    else if(guess<randomNumber){
-        display("Number Is Too Low, Try Higher Number");
-        document.getElementById('guessinput').value = "";
+var bc=0;
 
-    }
-    else{
-        display("Number Is Too High, Try Lower Number");
-        document.getElementById('guessinput').value = "";
-    }
-}
+document.getElementById('btn').addEventListener('click',function(){
+     const guess=parseInt(document.getElementById('guessInput').value);
+     const lock=document.getElementById('lock');
+      if(guess===randomNumber){
+        bc++;
+        lock.src='uk.avif';
+        lock.width = 249; 
+        lock.height = 209;
+        display("Congratulations!!!.You opened the box"+bc);
+        randomNumber=Math.floor(Math.random()*100)+1;
+        attempts=10;
+        setTimeout(()=>{
+          lock.src='lock.jpg';
+          display("Guess the number to open the Box "+(bc + 1));
+          document.getElementById('guessInput').value='';
+        },5000);
+        if(bc===5){
+          display("Congratulations! You won the game!");
+          document.getElementById('btn').disabled=true;
+          document.getElementById('guessInput').disabled=true;
+        }
+
+       
+      }
+      else if(guess<randomNumber){
+        display("Your Number is too low..Try Again.");
+      }
+      else{
+        display("Your Number is too high..Try Again.");
+      }
+    
     attempts--;
-    if(attempts==0){
-        display("Game Over! Try Again...And The Random Number Is " + randomNumber);
-        document.getElementById('guessinput').value = "";
-    }
+    if(attempts===0){
+      display('Game Over! Try Again Later');
+  }
+
 });
-function display(msg){
-    document.getElementById('msg').textContent=msg;
-}
+
+ function display(msg){
+document.getElementById('msg').textContent=msg;
+ }
